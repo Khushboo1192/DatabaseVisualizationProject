@@ -1,0 +1,18 @@
+{
+  "name": "TimeSuck",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "^1.5.6",
+    "body-parser": "^1.15.1",
+    "bootstrap": "^3.3.6",
+    "connect-multiparty": "^2.0.0",
+    "csv-parse": "^1.1.2",
+    "csvtojson": "^1.0.0",
+    "d3": "^3.5.17",
+    "express": "^4.13.4",
+    "fast-csv": "^2.0.0",
+    "line-by-line": "^0.1.5",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.4.20"
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html ng-app="TimeWaste">
+    
+    <head>  
+        <title> Hues Platform </title>   
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-panels.min.js"></script>
+		<script src="js/init.js"></script>
+        <link rel="stylesheet" href= "node_modules/bootstrap/dist/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/app/css/main.css"/>
+        <link rel="stylesheet" href="/app/css/dc.css" />
+        <link rel="stylesheet" href="/app/css/stylenew.css" />
+        
+    </head>
+     <nav class="navbar navbar-inverse" ng-controller="NavigationController">
+            <div class="container-fluid">
+                
+                 <!-- logo and main page link -->  
+                 <div class="navbar-header">
+                      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" ui-sref="#"> HUES </a>
+                 </div>  
+                 <div ng-show="loggedIn" >
+                     <div class="collapse navbar-collapse" id="myNavbar">
+                      <ul class="nav navbar-nav">
+                        <li class="active">
+                        <a ui-sref="#">Home</a></li>
+                        <li><a ui-sref="uploadDataFile"> UploadFile</a></li>
+                        <li><a ui-sref="visualizeGraph"> Visualization</a></li>                        
+                      </ul>
+                      <ul class="nav navbar-nav navbar-right">
+                        <li><a ng-click="logOut();"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+                      </ul>
+                     </div>     
+                 </div>
+                 <div ng-show="!loggedIn"> 
+                     <input type="text" ng-model="login.email">
+                     <input type="password" ng-model="login.password">
+                     <button ng-click="logUserIn()"> Login </button>
+                     <a ui-sref ="signUp"> Create an account </a>                 
+                  </div>
+            </div>
+        </nav>  
+    <body>   
+        <div ui-view></div><div id="wrapper">
+			<br>
+        <br>
+        <br>
+			<!-- Header -->
+			<div id="header">
+				<div class="container"> 
+					
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="#">Analytics Dashboard</a></h1>
+					</div>
+					
+					<!-- Nav -->
+
+				</div>
+			</div>
+			<!-- /Header -->
+			
+			<div id="page" style="margin-top:-61px;">
+
+				<div class="container">
+
+					<div class="row">
+						<div class="2u chart-wrapper" id="menuselect" style="background-color: #33CC99; height: 60px;">
+							<div class="chart-title">  <strong> State Selector </strong> </div>					
+						</div>
+						<div class="2u">
+				<div> <span> &nbsp</span></div>
+						</div>
+						<div class="2u chart-wrapper" id="total-projects">
+							<div class="chart-title">  <strong> Total Donation Count </strong> </div>					
+						</div>
+						<div class="2u chart-wrapper" id="net-donations">
+							<div class="chart-title">  <strong> Nett Donations ($) </strong> </div>					
+						</div>
+
+
+					<div class="3u dc-data-count dc-chart" id="row-selection">
+						<span class="filter-count">_</span> selected out of <span class="total-count">_</span> records |
+						<span>
+							<a href='javascript:dc.filterAll();dc.redrawAll();'><font color="#33CC99">Reset All</font></a>
+						</span>
+					</div>
+							
+
+				</div>
+
+
+					<div class="row">
+						<div class="6u chart-wrapper"  id="date-chart">
+							<div class="chart-title bold"> <strong> Number of Donations </strong></div>
+
+						</div>
+						<div class="3u chart-wrapper" id="resource-chart">
+							<div class="chart-title">  <strong> Donation Count for Resources </strong> </div>							
+
+						</div>
+						<div class="3u chart-wrapper" id="funding-chart">
+							<div class="chart-title">  <strong> Funding Status </strong> </div>					
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="4u chart-wrapper"  id="grade-chart">
+							<div class="chart-title">  <strong> Donation Count by Grade </strong> </div>
+						</div>
+						<div class="4u chart-wrapper" id="poverty-chart">
+							<div class="chart-title">  <strong> Donation Count by Poverty Level</strong></div>							
+
+						</div>
+
+												<div class="4u chart-wrapper"  id="state-donations">
+							<div class="chart-title">  <strong> Donation Amount by State ($) </strong> </div>
+						</div>
+
+					</div>
+
+				</div>	
+			</div>
+
+			
+		</div>
+
+<script src='js/crossfilter.js' type='text/javascript'></script>
+<script src='js/d3.js' type='text/javascript'></script>
+<script src='js/dc.js' type='text/javascript'></script>
+<script src='js/queue.js' type='text/javascript'></script>
+<script src='js/Dashboard.js' type='text/javascript'></script>
+        
+    </body>
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    <script src="app/app.js"></script>
+    <script src="app/signup/signup-controller.js"></script>
+    <script src="app/navigation/navigation-controller.js"></script>
+    <script src="app/profile/edit-profile-controller.js"></script>
+    <script src="app/upload/upload-data-file-controller.js"></script>
+     
+     <!-- Libraries -->
+     <script src="node_modules/ng-file-upload/dist/ng-file-upload.js"></script>
+     <script src="node_modules/ng-file-upload/dist/ng-file-upload-all.js"></script>
+     <script src="node_modules/ng-file-upload/dist/ng-file-upload-shim.js"></script>
+     <script src="/node_modules/d3/d3.js"></script>
+</html>
+ 
