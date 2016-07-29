@@ -1,15 +1,14 @@
-<div class="col-sm-3 col-sm-offset-4">
-    
-        
+<div ng-show="loggedIn">
+    <div class="col-sm-3 col-sm-offset-4">
+            <div class="row">
+                    Instruction to Upload File , CSV Format
+            </div>
 
-        <div class="row">
-                Instruct ion to Upload File , CSV Format
-        </div>
-
-        <div class="row">
-            <textarea class="form-control" ng-model="user.bio" ng-blur="updateBio()"> Fill in comments for the file to be uploaded </textarea>
-        </div>   
-        <div class="row">
-            <div class="button" ngf-select ng-model="file" name="file">Select</div>
-        </div>
+            <div class="row">
+                <textarea class="form-control" ng-model="user.bio" ng-blur="updateBio()"> Fill in comments for the file to be uploaded </textarea>
+            </div>   
+            <div class="row">
+                <div class="button" ngf-select ng-model="file" name="file">Select</div>
+            </div>
+    </div>
 </div>
