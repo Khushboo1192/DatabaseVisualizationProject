@@ -25,6 +25,11 @@
               .state('#',{
                url:"/home",
                templateUrl:"app/main/main.html"    
+            }) 
+              .state('staticDataGraph',{
+               url:"/data-graph",
+               templateUrl:"/app/static-visualize/static-data-visualize.html",
+               controller: "StaticDataVisualizeController" 
             })
             
         })

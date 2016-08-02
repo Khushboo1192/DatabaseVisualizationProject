@@ -2,7 +2,7 @@
 
 author: Khushboo Mandlecha
 
-Date Created: 1st June
+Date Created: 1st June 2016
 GSoC2016
 This is the main server file which will have all GET/POST routes.
 
@@ -41,24 +41,16 @@ app.listen('3000', function () {
 // App.use modules
 
 app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/vnd.api+json' })); 
+app.use(bodyParser.urlencoded({ extended: true })); // parse application/x-www-form-urlencoded
+app.use(methodOverride('X-HTTP-Method-Override'));
 app.use(multipartMiddleware);
 app.use('/app', express.static(__dirname + "/app" )); 
 app.use('/node_modules', express.static(__dirname + "/node_modules" )); 
-
-
-//-----------------_______________________________
-
-app.use(bodyParser.json({ type: 'application/vnd.api+json' })); // parse application/vnd.api+json as json
-app.use(bodyParser.urlencoded({ extended: true })); // parse application/x-www-form-urlencoded
-
-app.use(methodOverride('X-HTTP-Method-Override')); // override with the X-HTTP-Method-Override header in the request. simulate DELETE/PUT
 //app.use(express.static(__dirname + '/public')); // set the static files location /public/img will be /img for users
-
 
 // routes ==================================================
 //require('./app/routes')(app); // pass our application into our routes
-
-//-----------------_______________________________
 
 // Get Modules
 app.get('/', function( req, res){
