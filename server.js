@@ -29,7 +29,6 @@ var profileController = require('./server/controllers/profile-controller');
 var uploadFileController = require('./server/controllers/uploadFile-controller');
 
 
-
 /*
 Database Connection. Change the server address as required.*/
 
@@ -73,3 +72,9 @@ app.post('/api/profile/editPhoto', multipartMiddleware, profileController.update
 //upload file : CSV Format
 
 app.post('/api/upload/uploadDataFile',uploadFileController.uploadDataFile);
+
+// visualize 
+
+//static data query : from the backend
+
+//app.post('api/static-visualize/staticDataGraph',)

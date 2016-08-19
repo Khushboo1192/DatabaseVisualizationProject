@@ -15,7 +15,7 @@
                .state('visualizeGraph',{
                 url:"/visualize-graph",
                 templateUrl:"/app/visualize/visualize.html",
-                //controller: "VisualizeGraphController" 
+                controller: "VisualizeGraphController" 
             })
                .state('uploadDataFile',{
                 url:"/upload-file",
