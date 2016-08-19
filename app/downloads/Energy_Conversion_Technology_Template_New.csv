@@ -1,0 +1,69 @@
+Technology general name,,
+Technology specific name,,
+Lifetime,,years
+Lifetime min,,
+Lifetime max,,
+Applicable geographic area,"if multiple, input as comma separated list embedded in double quotes",
+Year,"if multiple, input as comma separated list embedded in double quotes",
+Year min,,
+Year max,,
+Source,embed in double quotes,
+Capital cost marginal,,CHF/kW
+Capital cost marginal min,,
+Capital cost marginal max,,
+Capital cost fixed,,CHF
+Capital cost fixed min,,
+Capital cost fixed max,,
+Installation cost,,CHF
+Installation cost min,,
+Installation cost max,,
+Operation cost,,CHF/year
+Operation cost min,,
+Operation cost max,,
+Operation cost per kW,,CHF/(kW*year)
+Operation cost per kW min,,
+Operation cost per kW max,,
+Maintenance cost,,CHF/year
+Maintenance cost min,,
+Maintenance cost max,,
+OM cost,,CHF/year
+OM cost min,,
+OM cost max,,
+OM cost per kW,,CHF/(kW*year)
+OM cost per kW min,,
+OM cost per kW max,,
+OM cost per kWh,,CHF/kWh
+OM cost per kWh min,,
+OM cost per kWh max,,
+Original currency,,
+Assumed currency conversion rate,,
+Output type,"Select one or more of: Heat, Electricity, Hydrogen, Natural gas (if multiple, input as comma separated list embedded in double quotes)",
+Fuel type,"if multiple, input as comma separated list embedded in double quotes",
+Prime mover,,
+Capacity,,kW
+Capacity min,,
+Capacity max,,
+Load,input as comma separated list embedded in double quotes,kW
+Load min,,
+Load max,,
+Efficiency,"if multiple, input as comma separated list embedded in double quotes",percent
+Efficiency min,,
+Efficiency max,,
+Electrical efficiency,"if multiple, input as comma separated list embedded in double quotes",percent
+Electrical efficiency min,,
+Electrical efficiency max,,
+Thermal efficiency,"if multiple, input as comma separated list embedded in double quotes",percent
+Thermal efficiency min,,
+Thermal efficiency max,,
+Heat to power ratio,,
+Heat to power ratio min,,
+Heat to power ratio max,,
+Load factor,,percent
+Load factor min,,
+Load factor max,,
+Power density,,kW/m2
+Power density min,,
+Power density max,,
+Area,,m2
+Area min,,
+Area max,,

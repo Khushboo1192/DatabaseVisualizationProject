@@ -1,0 +1,49 @@
+Technology general name,,
+Technology specific name,,
+Lifetime,,years
+Lifetime min,,
+Lifetime max,,
+Applicable geographic area,"if multiple, input as comma separated list embedded in double quotes",
+Year,"if multiple, input as comma separated list embedded in double quotes",
+Year min,,
+Year max,,
+Source,embed in double quotes,
+Capital cost marginal,,CHF/m
+Capital cost marginal min,,
+Capital cost marginal max,,
+Capital cost fixed,,CHF
+Capital cost fixed min,,
+Capital cost fixed max,,
+Installation cost,,CHF
+Installation cost min,,
+Installation cost max,,
+Operation cost,,CHF/year
+Operation cost min,,
+Operation cost max,,
+Maintenance cost,,CHF/year
+Maintenance cost min,,
+Maintenance cost max,,
+OM cost,,CHF/year
+OM cost min,,
+OM cost max,,
+Original currency,,
+Assumed currency conversion rate,,
+Type of energy transported,"Select one of: Heat, Electricity, Hydrogen, Natural gas",
+Electrical capacity,,kVA
+Electrical capacity min,,
+Electrical capacity max,,
+Heat capacity,,kW
+Heat capacity min,,
+Heat capacity max,,
+Gas capacity,,kW
+Gas capacity min,,
+Gas capacity max,,
+Electrical resistance,,Ohm/m
+Electrical resistance min,,
+Electrical resistance max,,
+Electrical reactance,,Ohm/m
+Electrical reactance min,,
+Electrical reactance max,,
+Diameter,,m
+Diameter min,,
+Diameter max,,

@@ -1,0 +1,64 @@
+Technology general name,,
+Technology specific name,,
+Lifetime,,years
+Lifetime max,,
+Lifetime min,,
+Lifetime cycles,,cycles
+Lifetime cycles max,,
+Lifetime cycles min,,
+Applicable geographic area,"if multiple, input as comma separated list embedded in double quotes",
+Year,"if multiple, input as comma separated list embedded in double quotes",
+Year max,,
+Year min,,
+Source,embed in double quotes,
+Capital cost marginal,,CHF/kWh
+Capital cost marginal max,,
+Capital cost marginal min,,
+Capital cost fixed,,CHF
+Capital cost fixed max,,
+Capital cost fixed min,,
+Installation cost,,CHF
+Installation cost max,,
+Installation cost min,,
+Operation cost,,CHF/year
+Operation cost max,,
+Operation cost min,,
+Operation cost per kWh,,CHF/(kWh*year)
+Operation cost per kWh max,,
+Operation cost per kWh min,,
+Maintenance cost,,CHF/year
+Maintenance cost max,,
+Maintenance cost min,,
+OM cost,,CHF/year
+OM cost max,,
+OM cost min,,
+OM cost per kWh,,CHF/(kWh*year)
+OM cost per kWh max,,
+OM cost per kWh min,,
+Original currency,,
+Assumed currency conversion rate,,
+Type of energy stored,"Select one or more of: Heat, Electricity, Hydrogen, Natural gas (if multiple, input as comma separated list embedded in double quotes)",
+Volumetric storage capacity,,m3
+Volumetric storage capacity max,,
+Volumetric storage capacity min,,
+Energy storage capacity,,kWh
+Energy storage capacity max,,
+Energy storage capacity min,,
+Max charge rate,,percent/hour
+Max charge rate max,,
+Max charge rate min,,
+Max discharge rate,,percent/hour
+Max discharge rate max,,
+Max discharge rate min,,
+Charging efficiency,,percent
+Charging efficiency max,,
+Charging efficiency min,,
+Discharging efficiency,,percent
+Discharging efficiency max,,
+Discharging efficiency min,,
+Min state of charge,,percent
+Min state of charge max,,
+Min state of charge min,,
+Loss rate,,percent/hour
+Loss rate max,,
+Loss rate min,,
