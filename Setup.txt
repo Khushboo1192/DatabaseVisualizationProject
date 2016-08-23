@@ -1,0 +1,28 @@
+Part1 : Migrate from sql to mongoDB
+
+To import a CSV File into database : 
+
+./mongoimport -d <DatabaseName> -c <CollectionName> --type csv --file <FileLocation>.csv --headerline
+
+https://docs.mongodb.com/manual/reference/mongo-shell/ (all commands for collections)
+---------------------------------------------------------------------------------------------------------
+
+Following dependencies have to be installed after Cloning or downloading the project folder:
+
+Install
+express : npm install --save express
+mongoose : npm install --save mongoose
+passport : npm install --save passport
+body-parser : npm install --save body-parser
+ng-file-upload : npm install ng-file-upload -- save
+sudo npm  install ui-router --save
+sudo npm install connect-multiparty --save
+sudo npm install fs-extra --save
+sudo npm install path --save
+sudo npm install line-by-line --save
+sudo npm install csv-parse --save
+sudo npm install fast-csv --save
+sudo npm install d3 --save    // install d3 : d3.js libraries in sub-folder d3  :  
+sudo npm install -g csvtojson
+sudo npm install method-override
+
